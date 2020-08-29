@@ -205,7 +205,7 @@ co_de_cl_te
 
 result9<- co_de_cl_te %>%
   group_by(CourseId, CourseName, DepartmentName,FirstName,LastName) %>%
- summarise(student_number = n())
+ summarise(student_number = n_distinct(StudentId))
 result9
 
 
